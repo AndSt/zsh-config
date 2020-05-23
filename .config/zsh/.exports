@@ -1,0 +1,12 @@
+# standard locations
+export SCRIPTS="${ZDOTDIR}/scripts"
+export PLUGINS="${ZDOTDIR}/plugins"
+export LC_COLLATE="C"
+
+# standard apps
+export EDITOR="vim"
+export BROWSER="google-chrome"
+
+# setup virtualenv
+export WORKON_HOME="${XDG_CACHE_HOME}/virtual-envs"
+source /usr/local/bin/virtualenvwrapper.sh

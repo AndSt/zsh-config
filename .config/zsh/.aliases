@@ -1,0 +1,27 @@
+# Setup of personal aliases
+
+# open and modify .zshrc
+zshconfig_fct(){
+    vim $XDG_CONFIG_HOME/zsh/.zshrc
+    source $XDG_CONFIG_HOME/zsh/.zshrc
+    echo "New .zshrc is sourced"
+}
+alias zshconfig="zshconfig_fct"
+
+# create and delete virtual environment
+alias cvenv="source $SCRIPTS/create_virtualenv.sh"
+alias dvenv="rmvirtualenv"
+
+#git aliases
+alias gclone="git clone"
+alias gc="git commit -m"
+alias gpclone="source $SCRIPTS/git_pull_python.sh"
+
+# small aliases
+alias v="vim"
+alias e="echo"
+
+if [[ "$(uname)" == "Linux" ]]; then
+    alias sai="sudo apt-get install"
+fi
+
