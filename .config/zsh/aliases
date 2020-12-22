@@ -15,7 +15,12 @@ alias dvenv="rmvirtualenv"
 #git aliases
 alias gclone="git clone"
 alias gc="git commit -m"
+alias ga="git add"
+alias gs="git status"
 alias gpclone="source $SCRIPTS/git_pull_python.sh"
+
+#docker aliases
+alias dps="sudo docker ps"
 
 # small aliases
 alias v="vim"

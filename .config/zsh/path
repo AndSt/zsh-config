@@ -1,0 +1,5 @@
+# Nodejs
+NJS_VERSION=v14.15.3
+NJS_DISTRO=linux-x64
+export PATH=/usr/local/lib/nodejs/node-$NJS_VERSION-$NJS_DISTRO/bin:$PATH
+

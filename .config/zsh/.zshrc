@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 source $ZDOTDIR/applications.conf
 source $ZDOTDIR/exports
 source $ZDOTDIR/aliases
-
+source $ZDOTDIR/path
 
 [ -f $XDG_CONFIG_HOME/fzf/fzf.conf ] && source $XDG_CONFIG_HOME/fzf/fzf.conf
+
