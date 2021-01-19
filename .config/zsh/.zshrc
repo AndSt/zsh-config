@@ -99,9 +99,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $ZDOTDIR/applications.conf
-source $ZDOTDIR/exports
-source $ZDOTDIR/aliases
 source $ZDOTDIR/path
+
+# source all exports
+for file in "${ZDOTDIR}"/exports/*; do
+    source $file
+done
+
+# source all aliases
+for file in "${ZDOTDIR}"/aliases/*; do
+    source $file
+done
+
 
 [ -f $XDG_CONFIG_HOME/fzf/fzf.conf ] && source $XDG_CONFIG_HOME/fzf/fzf.conf
 
