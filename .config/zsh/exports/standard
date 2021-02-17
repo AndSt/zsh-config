@@ -9,4 +9,5 @@ export BROWSER="google-chrome"
 
 # setup virtualenv
 export WORKON_HOME="${XDG_CACHE_HOME}/virtual-envs"
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh

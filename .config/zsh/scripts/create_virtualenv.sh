@@ -8,6 +8,6 @@ echo $PATH
 mkvirtualenv -p python3.7 $1
 
 workon $1
-pip install jupyter
+pip install jupyter twine pytest pandas numpy joblib
 deactivate
 

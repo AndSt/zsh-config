@@ -112,5 +112,5 @@ for file in "${ZDOTDIR}"/aliases/*; do
 done
 
 
-[ -f $XDG_CONFIG_HOME/fzf/fzf.conf ] && source $XDG_CONFIG_HOME/fzf/fzf.conf
+#[ -f $XDG_CONFIG_HOME/fzf/fzf.conf ] && source $XDG_CONFIG_HOME/fzf/fzf.conf
 

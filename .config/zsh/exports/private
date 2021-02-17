@@ -1,0 +1,6 @@
+## synology related
+export PHD=$HOME/synology/phd
+export DOCS=$HOME/synology/documents
+
+## development
+export DEV=$HOME/devel
