@@ -1,5 +1,8 @@
 # Setup of personal aliases
 
+#python
+alias pip=pip3
+
 # open and modify .zshrc
 zshconfig_fct(){
     vim $XDG_CONFIG_HOME/zsh/.zshrc

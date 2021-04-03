@@ -3,3 +3,6 @@ NJS_VERSION=v14.15.3
 NJS_DISTRO=linux-x64
 export PATH=/usr/local/lib/nodejs/node-$NJS_VERSION-$NJS_DISTRO/bin:$PATH
 
+export PATH="/usr/local/opt/python@3.7/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
