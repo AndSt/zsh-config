@@ -8,6 +8,16 @@ export EDITOR="vim"
 export BROWSER="google-chrome"
 
 # setup virtualenv
-export WORKON_HOME="${XDG_CACHE_HOME}/virtual-envs"
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+#export WORKON_HOME="${XDG_CACHE_HOME}/virtual-envs"
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#source /usr/local/bin/virtualenvwrapper.sh
+
+# export conda locations
+export CONDA_ENVS_PATH=$XDG_CACHE_HOME/conda_envs
+export CONDA_PKGS_DIRS=$XDG_CACHE_HOME/conda_pkgs
+
+# pip cache
+export PIP_CACHE_DIR=$XDG_CACHE_HOME/cache/pip
+
+# NLTK data
+export NLTK_DATA=$XDG_CACHE_HOME/cache/nltk_data

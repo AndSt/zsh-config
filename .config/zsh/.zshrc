@@ -65,10 +65,12 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 plugins+=(zsh-autosuggestions)
-plugins+=(virtualenvwrapper)
+#plugins+=(virtualenvwrapper)
 plugins+=(autojump)
 plugins+=(dotenv)
 plugins+=(zsh-syntax-highlighting)
+#plugins+=(zsh-activate-py-environment)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,3 +116,12 @@ done
 
 #[ -f $XDG_CONFIG_HOME/fzf/fzf.conf ] && source $XDG_CONFIG_HOME/fzf/fzf.conf
 
+# source uni files
+source "${ZDOTDIR}/uni/exports"
+source "${ZDOTDIR}/uni/aliases"
+
+# initialize python
+source $ZDOTDIR/init_conda.sh
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

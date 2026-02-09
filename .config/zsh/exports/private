@@ -4,3 +4,9 @@ export DOCS=$HOME/synology/documents
 
 ## development
 export DEV=$HOME/devel
+
+## LIFX token
+export LIFX_TOKEN="c9dc6b029a2c875deff38276245b2c564ce2f9ac3e11d62f1d25f4aba4fd5d57"
+
+## LDA
+export LDA=/Users/andst/synology/andi_dokumente/arbeit/lda
