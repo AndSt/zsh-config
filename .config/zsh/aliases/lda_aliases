@@ -1,0 +1,14 @@
+
+
+ldaenv() {
+    # Run Python script and export its output to a temporary file
+    python3 "${LDA}/python_env_vars/env_loader.py" "$1" --print-env > ${LDA}/python_env_vars/ldaenv_temp_vars.txt
+
+    # Read the environment variables from the file and export them
+    while IFS='=' read -r name value; do
+        export "$name=$value"
+    done < ${LDA}/python_env_vars/ldaenv_temp_vars.txt
+
+    # Clean up
+    rm ${LDA}/python_env_vars/ldaenv_temp_vars.txt
+}
